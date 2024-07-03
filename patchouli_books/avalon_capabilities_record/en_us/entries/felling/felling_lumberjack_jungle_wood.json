@@ -1,0 +1,22 @@
+{
+  "parent": "patchouli:felling",
+  "name": "(300) Jungle Wood",
+  "icon": "minecraft:jungle_wood",
+  "category": "patchouli:felling",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Jungle Wood!",
+      "item": "minecraft:jungle_wood{display:{Name:'{\\\"text\\\": \\\"Jungle Wood\\\", \\\"color\\\": \\\"#FFA500\\\"}'}}",
+      "text": "Gathering $(#FFA500)Jungle Wood $()is simple! This is the 4th capability that you will unlock! $(br2)Item Given: Jungle Wood"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:item{Item:{id:\"minecraft:jungle_wood\",Count:1b}}",
+      "scale": 1,
+      "offset": 0,
+      "name": "Capability Level 300",
+      "text": "At $(#FFA500)level 300$(), you will be able to immediately gather $(#FFA500)Jungle Wood$()"
+    }
+  ]
+}

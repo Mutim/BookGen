@@ -1,0 +1,22 @@
+{
+  "parent": "patchouli:chopping",
+  "name": "(1) Birch Planks",
+  "icon": "minecraft:birch_planks",
+  "category": "patchouli:chopping",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Birch Planks!",
+      "item": "minecraft:birch_planks{display:{Name:'{\\\"text\\\": \\\"Birch Planks\\\", \\\"color\\\": \\\"#FFA500\\\"}'}}",
+      "text": "Gathering $(#FFA500)Birch Planks $()is simple! This is the 2nd capability that you will unlock! $(br2)Item Given: Birch Planks"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:item{Item:{id:\"minecraft:birch_planks\",Count:1b}}",
+      "scale": 1,
+      "offset": 0,
+      "name": "Capability Level 1",
+      "text": "At $(#FFA500)level 1$(), you will be able to immediately gather $(#FFA500)Birch Planks$()"
+    }
+  ]
+}

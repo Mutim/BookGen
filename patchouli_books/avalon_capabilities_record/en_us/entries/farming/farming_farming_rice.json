@@ -1,0 +1,22 @@
+{
+  "parent": "patchouli:farming",
+  "name": "(50) Rice",
+  "icon": "farmersdelight:rice",
+  "category": "patchouli:farming",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Rice!",
+      "item": "farmersdelight:rice{display:{Name:'{\\\"text\\\": \\\"Rice\\\", \\\"color\\\": \\\"#FFA500\\\"}'}}",
+      "text": "Gathering $(#FFA500)Rice $()is simple! This is the 2nd capability that you will unlock! $(br2)Item Given: Rice"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:item{Item:{id:\"farmersdelight:rice\",Count:1b}}",
+      "scale": 1,
+      "offset": 0,
+      "name": "Capability Level 50",
+      "text": "At $(#FFA500)level 50$(), you will be able to immediately gather $(#FFA500)Rice$()"
+    }
+  ]
+}

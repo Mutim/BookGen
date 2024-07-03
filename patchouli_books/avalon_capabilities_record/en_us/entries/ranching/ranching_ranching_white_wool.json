@@ -1,0 +1,22 @@
+{
+  "parent": "patchouli:ranching",
+  "name": "(0) White Wool",
+  "icon": "minecraft:white_wool",
+  "category": "patchouli:ranching",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "White Wool!",
+      "item": "minecraft:white_wool{display:{Name:'{\\\"text\\\": \\\"White Wool\\\", \\\"color\\\": \\\"#FFA500\\\"}'}}",
+      "text": "Ranching for $(#FFA500)White Wool $()is simple! This is the 4th capability that you will unlock! $(br2)Animal Ranched: Sheep$(br)Item Given: White Wool$(br)Tool Required: Shears"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:sheep",
+      "scale": 0.5,
+      "offset": 0,
+      "name": "Capability Level 0",
+      "text": "At $(#FFA500)level 0$(), you will be able to immediately gather $(#FFA500)White Wool$()"
+    }
+  ]
+}

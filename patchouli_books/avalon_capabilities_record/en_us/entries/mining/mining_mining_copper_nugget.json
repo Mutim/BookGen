@@ -1,0 +1,22 @@
+{
+  "parent": "patchouli:mining",
+  "name": "(100) Copper Nugget",
+  "icon": "create:copper_nugget",
+  "category": "patchouli:mining",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Copper Nugget!",
+      "item": "create:copper_nugget{display:{Name:'{\\\"text\\\": \\\"Copper Nugget\\\", \\\"color\\\": \\\"#FFA500\\\"}'}}",
+      "text": "Gathering $(#FFA500)Copper Nugget $()is simple! This is the 2nd capability that you will unlock! $(br2)Item Given: Copper Nugget"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:item{Item:{id:\"create:copper_nugget\",Count:1b}}",
+      "scale": 1,
+      "offset": 0,
+      "name": "Capability Level 100",
+      "text": "At $(#FFA500)level 100$(), you will be able to immediately gather $(#FFA500)Copper Nugget$()"
+    }
+  ]
+}

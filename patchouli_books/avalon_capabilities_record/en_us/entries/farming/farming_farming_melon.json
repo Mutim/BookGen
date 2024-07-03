@@ -1,0 +1,22 @@
+{
+  "parent": "patchouli:farming",
+  "name": "(150) Melon Slice",
+  "icon": "minecraft:melon_slice",
+  "category": "patchouli:farming",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Melon Slice!",
+      "item": "minecraft:melon_slice{display:{Name:'{\\\"text\\\": \\\"Melon Slice\\\", \\\"color\\\": \\\"#FFA500\\\"}'}}",
+      "text": "Gathering $(#FFA500)Melon $()is simple! This is the 4th capability that you will unlock! $(br2)Item Given: Melon"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:item{Item:{id:\"minecraft:melon_slice\",Count:1b}}",
+      "scale": 1,
+      "offset": 0,
+      "name": "Capability Level 150",
+      "text": "At $(#FFA500)level 150$(), you will be able to immediately gather $(#FFA500)Melon$()"
+    }
+  ]
+}

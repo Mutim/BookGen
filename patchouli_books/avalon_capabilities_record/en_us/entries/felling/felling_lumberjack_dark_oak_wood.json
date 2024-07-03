@@ -1,0 +1,22 @@
+{
+  "parent": "patchouli:felling",
+  "name": "(500) Dark Oak Wood",
+  "icon": "minecraft:dark_oak_wood",
+  "category": "patchouli:felling",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Dark Oak Wood!",
+      "item": "minecraft:dark_oak_wood{display:{Name:'{\\\"text\\\": \\\"Dark Oak Wood\\\", \\\"color\\\": \\\"#FFA500\\\"}'}}",
+      "text": "Gathering $(#FFA500)Dark Oak Wood $()is simple! This is the 6th capability that you will unlock! $(br2)Item Given: Dark Oak Wood"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:item{Item:{id:\"minecraft:dark_oak_wood\",Count:1b}}",
+      "scale": 1,
+      "offset": 0,
+      "name": "Capability Level 500",
+      "text": "At $(#FFA500)level 500$(), you will be able to immediately gather $(#FFA500)Dark Oak Wood$()"
+    }
+  ]
+}

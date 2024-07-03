@@ -1,0 +1,22 @@
+{
+  "parent": "patchouli:farming",
+  "name": "(450) Pumpkin Slice",
+  "icon": "farmersdelight:pumpkin_slice",
+  "category": "patchouli:farming",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Pumpkin Slice!",
+      "item": "farmersdelight:pumpkin_slice{display:{Name:'{\\\"text\\\": \\\"Pumpkin Slice\\\", \\\"color\\\": \\\"#FFA500\\\"}'}}",
+      "text": "Gathering $(#FFA500)Pumpkin $()is simple! This is the 10th capability that you will unlock! $(br2)Item Given: Pumpkin"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:item{Item:{id:\"farmersdelight:pumpkin_slice\",Count:1b}}",
+      "scale": 1,
+      "offset": 0,
+      "name": "Capability Level 450",
+      "text": "At $(#FFA500)level 450$(), you will be able to immediately gather $(#FFA500)Pumpkin$()"
+    }
+  ]
+}

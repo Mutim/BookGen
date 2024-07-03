@@ -1,0 +1,22 @@
+{
+  "parent": "patchouli:ranching",
+  "name": "(0) Egg",
+  "icon": "minecraft:egg",
+  "category": "patchouli:ranching",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Egg!",
+      "item": "minecraft:egg{display:{Name:'{\\\"text\\\": \\\"Egg\\\", \\\"color\\\": \\\"#FFA500\\\"}'}}",
+      "text": "Ranching for $(#FFA500)Egg $()is simple! This is the 3rd capability that you will unlock! $(br2)Animal Ranched: Chicken$(br)Item Given: Egg$(br)Tool Required: Hand"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:chicken",
+      "scale": 0.5,
+      "offset": 0,
+      "name": "Capability Level 0",
+      "text": "At $(#FFA500)level 0$(), you will be able to immediately gather $(#FFA500)Egg$()"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "parent": "patchouli:farming",
+  "name": "(1) Wheat",
+  "icon": "minecraft:wheat",
+  "category": "patchouli:farming",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Wheat!",
+      "item": "minecraft:wheat{display:{Name:'{\\\"text\\\": \\\"Wheat\\\", \\\"color\\\": \\\"#FFA500\\\"}'}}",
+      "text": "Gathering $(#FFA500)Wheat $()is simple! This is the 1st capability that you will unlock! $(br2)Item Given: Wheat"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:item{Item:{id:\"minecraft:wheat\",Count:1b}}",
+      "scale": 1,
+      "offset": 0,
+      "name": "Capability Level 1",
+      "text": "At $(#FFA500)level 1$(), you will be able to immediately gather $(#FFA500)Wheat$()"
+    }
+  ]
+}

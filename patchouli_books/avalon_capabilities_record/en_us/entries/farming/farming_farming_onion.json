@@ -1,0 +1,22 @@
+{
+  "parent": "patchouli:farming",
+  "name": "(300) Onion",
+  "icon": "farmersdelight:onion",
+  "category": "patchouli:farming",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Onion!",
+      "item": "farmersdelight:onion{display:{Name:'{\\\"text\\\": \\\"Onion\\\", \\\"color\\\": \\\"#FFA500\\\"}'}}",
+      "text": "Gathering $(#FFA500)Onion $()is simple! This is the 7th capability that you will unlock! $(br2)Item Given: Onion"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:item{Item:{id:\"farmersdelight:onion\",Count:1b}}",
+      "scale": 1,
+      "offset": 0,
+      "name": "Capability Level 300",
+      "text": "At $(#FFA500)level 300$(), you will be able to immediately gather $(#FFA500)Onion$()"
+    }
+  ]
+}

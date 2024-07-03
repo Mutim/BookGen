@@ -1,0 +1,22 @@
+{
+  "parent": "patchouli:chopping",
+  "name": "(400) Acacia Planks",
+  "icon": "minecraft:acacia_planks",
+  "category": "patchouli:chopping",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Acacia Planks!",
+      "item": "minecraft:acacia_planks{display:{Name:'{\\\"text\\\": \\\"Acacia Planks\\\", \\\"color\\\": \\\"#FFA500\\\"}'}}",
+      "text": "Gathering $(#FFA500)Acacia Planks $()is simple! This is the 5th capability that you will unlock! $(br2)Item Given: Acacia Planks"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:item{Item:{id:\"minecraft:acacia_planks\",Count:1b}}",
+      "scale": 1,
+      "offset": 0,
+      "name": "Capability Level 400",
+      "text": "At $(#FFA500)level 400$(), you will be able to immediately gather $(#FFA500)Acacia Planks$()"
+    }
+  ]
+}

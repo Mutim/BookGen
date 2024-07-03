@@ -1,0 +1,22 @@
+{
+  "parent": "patchouli:ranching",
+  "name": "(0) Milk Bucket",
+  "icon": "minecraft:milk_bucket",
+  "category": "patchouli:ranching",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Milk Bucket!",
+      "item": "minecraft:milk_bucket{display:{Name:'{\\\"text\\\": \\\"Milk Bucket\\\", \\\"color\\\": \\\"#FFA500\\\"}'}}",
+      "text": "Ranching for $(#FFA500)Milk Bucket $()is simple! This is the 1st capability that you will unlock! $(br2)Animal Ranched: Cow$(br)Item Given: Milk Bucket$(br)Tool Required: Bucket"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:cow",
+      "scale": 0.5,
+      "offset": 0,
+      "name": "Capability Level 0",
+      "text": "At $(#FFA500)level 0$(), you will be able to immediately gather $(#FFA500)Milk Bucket$()"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "parent": "patchouli:mining",
+  "name": "(500) Netherite Scrap",
+  "icon": "minecraft:netherite_scrap",
+  "category": "patchouli:mining",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Netherite Scrap!",
+      "item": "minecraft:netherite_scrap{display:{Name:'{\\\"text\\\": \\\"Netherite Scrap\\\", \\\"color\\\": \\\"#FFA500\\\"}'}}",
+      "text": "Gathering $(#FFA500)Netherite $()is simple! This is the 6th capability that you will unlock! $(br2)Item Given: Netherite"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:item{Item:{id:\"minecraft:netherite_scrap\",Count:1b}}",
+      "scale": 1,
+      "offset": 0,
+      "name": "Capability Level 500",
+      "text": "At $(#FFA500)level 500$(), you will be able to immediately gather $(#FFA500)Netherite$()"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "parent": "patchouli:farming",
+  "name": "(100) Cabbage",
+  "icon": "farmersdelight:cabbage",
+  "category": "patchouli:farming",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Cabbage!",
+      "item": "farmersdelight:cabbage{display:{Name:'{\\\"text\\\": \\\"Cabbage\\\", \\\"color\\\": \\\"#FFA500\\\"}'}}",
+      "text": "Gathering $(#FFA500)Cabbage $()is simple! This is the 3rd capability that you will unlock! $(br2)Item Given: Cabbage"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:item{Item:{id:\"farmersdelight:cabbage\",Count:1b}}",
+      "scale": 1,
+      "offset": 0,
+      "name": "Capability Level 100",
+      "text": "At $(#FFA500)level 100$(), you will be able to immediately gather $(#FFA500)Cabbage$()"
+    }
+  ]
+}

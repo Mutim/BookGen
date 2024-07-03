@@ -1,0 +1,22 @@
+{
+  "parent": "patchouli:felling",
+  "name": "(1) Oak Wood",
+  "icon": "minecraft:oak_wood",
+  "category": "patchouli:felling",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Oak Wood!",
+      "item": "minecraft:oak_wood{display:{Name:'{\\\"text\\\": \\\"Oak Wood\\\", \\\"color\\\": \\\"#FFA500\\\"}'}}",
+      "text": "Gathering $(#FFA500)Oak Wood $()is simple! This is the 1st capability that you will unlock! $(br2)Item Given: Oak Wood"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:item{Item:{id:\"minecraft:oak_wood\",Count:1b}}",
+      "scale": 1,
+      "offset": 0,
+      "name": "Capability Level 1",
+      "text": "At $(#FFA500)level 1$(), you will be able to immediately gather $(#FFA500)Oak Wood$()"
+    }
+  ]
+}

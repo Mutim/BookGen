@@ -1,0 +1,22 @@
+{
+  "parent": "patchouli:ranching",
+  "name": "(0) Mutton Chops",
+  "icon": "farmersdelight:mutton_chops",
+  "category": "patchouli:ranching",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Mutton Chops!",
+      "item": "farmersdelight:mutton_chops{display:{Name:'{\\\"text\\\": \\\"Mutton Chops\\\", \\\"color\\\": \\\"#FFA500\\\"}'}}",
+      "text": "Ranching for $(#FFA500)Mutton Chops $()is simple! This is the 4th capability that you will unlock! $(br2)Animal Ranched: Sheep$(br)Item Given: Mutton Chops$(br)Tool Required: Butchering Knife"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:sheep",
+      "scale": 0.5,
+      "offset": 0,
+      "name": "Capability Level 0",
+      "text": "At $(#FFA500)level 0$(), you will be able to immediately gather $(#FFA500)Mutton Chops$()"
+    }
+  ]
+}

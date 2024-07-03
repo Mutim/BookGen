@@ -1,0 +1,22 @@
+{
+  "parent": "patchouli:mining",
+  "name": "(0) Stone",
+  "icon": "minecraft:stone",
+  "category": "patchouli:mining",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Stone!",
+      "item": "minecraft:stone{display:{Name:'{\\\"text\\\": \\\"Stone\\\", \\\"color\\\": \\\"#FFA500\\\"}'}}",
+      "text": "Gathering $(#FFA500)Stone $()is simple! This is the 1st capability that you will unlock! $(br2)Item Given: Stone"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:item{Item:{id:\"minecraft:raw_iron_block\",Count:1b}}",
+      "scale": 1,
+      "offset": 0,
+      "name": "Capability Level 0",
+      "text": "At $(#FFA500)level 0$(), you will be able to immediately gather $(#FFA500)Stone$()"
+    }
+  ]
+}

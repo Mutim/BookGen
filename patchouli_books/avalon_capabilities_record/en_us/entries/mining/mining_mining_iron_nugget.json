@@ -1,0 +1,22 @@
+{
+  "parent": "patchouli:mining",
+  "name": "(200) Iron Nugget",
+  "icon": "minecraft:iron_nugget",
+  "category": "patchouli:mining",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Iron Nugget!",
+      "item": "minecraft:iron_nugget{display:{Name:'{\\\"text\\\": \\\"Iron Nugget\\\", \\\"color\\\": \\\"#FFA500\\\"}'}}",
+      "text": "Gathering $(#FFA500)Iron Nugget $()is simple! This is the 3rd capability that you will unlock! $(br2)Item Given: Iron Nugget"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:item{Item:{id:\"minecraft:iron_nugget\",Count:1b}}",
+      "scale": 1,
+      "offset": 0,
+      "name": "Capability Level 200",
+      "text": "At $(#FFA500)level 200$(), you will be able to immediately gather $(#FFA500)Iron Nugget$()"
+    }
+  ]
+}

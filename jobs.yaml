@@ -1,0 +1,1561 @@
+capabilities_data:
+  type: data
+  capability:
+    lumberjack_harvest:
+      type: gathering
+      capability: lumberjack
+      category: "felling"
+      icon: "minecraft:iron_axe"
+      tool: "*_axe"
+      action_string: <&6>Chopping Logs
+      action_time: 5s
+      animation_task: lumberjack_chopping_tree_animate
+      fake_to_air: false
+      fake_to_air_duration: 0s
+      harvests:
+        "oak_*":
+          spotlight: "minecraft:oak_wood"
+          icon: "minecraft:oak_wood"
+          material_given: lumberjack_oak_wood
+          quantity_given: 1
+          capability_gained: 0.001
+          capability_needed: 1
+        "birch_*":
+          spotlight: "minecraft:birch_wood"
+          icon: "minecraft:birch_wood"
+          material_given: lumberjack_birch_wood
+          quantity_given: 1
+          seconds_needed: 5
+          capability_gained: 0.001
+          capability_needed: 100
+        "spruce_*":
+          spotlight: "minecraft:spruce_wood"
+          icon: "minecraft:spruce_wood"
+          material_given: lumberjack_spruce_wood
+          quantity_given: 1
+          seconds_needed: 5
+          capability_gained: 0.001
+          capability_needed: 200
+        "jungle_*":
+          spotlight: "minecraft:jungle_wood"
+          icon: "minecraft:jungle_wood"
+          material_given: lumberjack_jungle_wood
+          quantity_given: 1
+          capability_gained: 0.001
+          capability_needed: 300
+        "acacia_*":
+          spotlight: "minecraft:acacia_wood"
+          icon: "minecraft:acacia_wood"
+          material_given: lumberjack_acacia_wood
+          quantity_given: 1
+          capability_gained: 0.001
+          capability_needed: 400
+        "dark_oak_*":
+          spotlight: "minecraft:dark_oak_wood"
+          icon: "minecraft:dark_oak_wood"
+          material_given: lumberjack_dark_oak_wood
+          quantity_given: 1
+          capability_gained: 0.001
+          capability_needed: 500
+    lumberjack_chop:
+      type: gathering
+      capability: lumberjack
+      category: "chopping"
+      icon: "minecraft:spruce_planks"
+      tool: "*_axe"
+      action_string: <&6>Splitting Planks
+      action_time: 5s
+      animation_task: lumberjack_chopping_block_animate
+      fake_to_air: false
+      fake_to_air_duration: 0s
+      harvests:
+        oak_log:
+          spotlight: "minecraft:oak_planks"
+          icon: "minecraft:oak_planks"
+          material_given: lumberjack_oak_planks
+          quantity_given: 1
+          capability_gained: 0.001
+          capability_needed: 0
+        birch_log:
+          spotlight: "minecraft:birch_planks"
+          icon: "minecraft:birch_planks"
+          material_given: lumberjack_birch_planks
+          quantity_given: 1
+          capability_gained: 0.001
+          capability_needed: 1
+        spruce_log:
+          spotlight: "minecraft:spruce_planks"
+          icon: "minecraft:spruce_planks"
+          material_given: lumberjack_spruce_planks
+          quantity_given: 1
+          seconds_needed: 5
+          capability_gained: 0.05
+          capability_needed: 200
+        jungle_log:
+          spotlight: "minecraft:jungle_planks"
+          icon: "minecraft:jungle_planks"
+          material_given: lumberjack_jungle_planks
+          quantity_given: 1
+          capability_gained: 0.05
+          capability_needed: 300
+        acacia_log:
+          spotlight: "minecraft:acacia_planks"
+          icon: "minecraft:acacia_planks"
+          material_given: lumberjack_acacia_planks
+          quantity_given: 1
+          capability_gained: 0.05
+          capability_needed: 400
+        dark_oak_log:
+          spotlight: "minecraft:dark_oak_planks"
+          icon: "minecraft:dark_oak_planks"
+          material_given: lumberjack_dark_oak_planks
+          quantity_given: 1
+          capability_gained: 0.05
+          capability_needed: 500
+    mining:
+      type: gathering
+      capability: mining
+      category: "mining"
+      icon: "minecraft:iron_pickaxe"
+      tool: "*_pickaxe"
+      action_string: <&6>Mining Mineral
+      action_time: <[seconds]>
+      animation_task: mining_animation
+      fake_to_air: true
+      fake_to_air_duration: 10m
+      harvests:
+        raw_iron_block:
+          spotlight: "minecraft:raw_iron_block"
+          icon: "minecraft:stone"
+          material_given: mining_stone
+          quantity_given: 1
+          capability_gained: 0.05
+          capability_needed: 0
+        copper_ore:
+          spotlight: "create:copper_nugget"
+          icon: "create:copper_nugget"
+          material_given: mining_copper_nugget
+          quantity_given: 1
+          capability_gained: 0.05
+          capability_needed: 100
+        iron_ore:
+          spotlight: "minecraft:iron_nugget"
+          icon: "minecraft:iron_nugget"
+          material_given: mining_iron_nugget
+          quantity_given: 1
+          capability_gained: 0.05
+          capability_needed: 200
+        gold_ore:
+          spotlight: "minecraft:gold_ore"
+          icon: "minecraft:gold_nugget"
+          material_given: mining_gold_nugget
+          quantity_given: 1
+          capability_gained: 0.05
+          capability_needed: 300
+        diamond_ore:
+          spotlight: "minecraft:diamond_ore"
+          icon: "minecraft:diamond"
+          material_given: mining_diamond
+          quantity_given: 1
+          capability_gained: 0.05
+          capability_needed: 400
+        netherite_ore:
+          spotlight: "minecraft:netherite_scrap"
+          icon: "minecraft:netherite_scrap"
+          material_given: mining_netherite
+          quantity_given: 1
+          capability_gained: 0.05
+          capability_needed: 500
+    farming:
+      type: gathering
+      capability: farming
+      category: "farming"
+      icon: "minecraft:wheat"
+      tool: "*_hoe"
+      action_string: <&6>Harvesting Crop
+      action_time: 5s
+      animation_task: farming_animation
+      fake_to_air: true
+      fake_to_air_duration: 5m
+      harvests:
+        WHEAT:
+          spotlight: "minecraft:wheat"
+          icon: "minecraft:wheat"
+          material_given: farming_wheat
+          quantity_given: 1
+          capability_gained: 0.1
+          capability_needed: 1
+        FARMERSDELIGHT_RICE_PANICLES:
+          spotlight: "farmersdelight:rice"
+          icon: "farmersdelight:rice"
+          material_given: farming_rice
+          quantity_given: 1
+          capability_gained: 0.1
+          capability_needed: 50
+        FARMERSDELIGHT_CABBAGES:
+          spotlight: "farmersdelight:cabbage"
+          icon: "farmersdelight:cabbage"
+          material_given: farming_cabbage
+          quantity_given: 3
+          capability_gained: 0.1
+          capability_needed: 100
+        MELON:
+          spotlight: "minecraft:melon_slice"
+          icon: "minecraft:melon_slice"
+          material_given: farming_melon
+          quantity_given: 3
+          capability_gained: 0.1
+          capability_needed: 150
+        CARROTS:
+          spotlight: "minecraft:carrot"
+          icon: "minecraft:carrot"
+          material_given: farming_carrot
+          quantity_given: 3
+          capability_gained: 0.1
+          capability_needed: 200
+        FARMERSDELIGHT_TOMATO_CRATE:
+          spotlight: "minecraft:apple"
+          icon: "minecraft:apple"
+          material_given: farming_apple
+          quantity_given: 3
+          capability_gained: 0.1
+          capability_needed: 250
+        FARMERSDELIGHT_ONIONS:
+          spotlight: "farmersdelight:onion"
+          icon: "farmersdelight:onion"
+          material_given: farming_onion
+          quantity_given: 3
+          capability_gained: 0.1
+          capability_needed: 300
+        POTATOES:
+          spotlight: "minecraft:potato"
+          icon: "minecraft:potato"
+          material_given: farming_potato
+          quantity_given: 3
+          capability_gained: 0.1
+          capability_needed: 350
+        FARMERSDELIGHT_TOMATOES:
+          spotlight: "farmersdelight:tomato"
+          icon: "farmersdelight:tomato"
+          material_given: farming_tomato
+          quantity_given: 3
+          capability_gained: 0.1
+          capability_needed: 400
+        PUMPKIN:
+          spotlight: "farmersdelight:pumpkin_slice"
+          icon: "farmersdelight:pumpkin_slice"
+          material_given: farming_pumpkin
+          quantity_given: 3
+          capability_gained: 0.1
+          capability_needed: 450
+    ranching:
+      type: ranching
+      capability: ranching
+      category: "ranching"
+      icon: "aquaculture:iron_fillet_knife"
+      harvests:
+        cow:
+          bucket:
+            tool: "bucket"
+            spotlight: "minecraft:cow"
+            icon: "minecraft:milk_bucket"
+            action_string: <&6>Milking Cow
+            action_time: 2
+            animation_task: noop
+            material_given: ranching_milk_bucket
+            quantity_given: 1
+            capability_gained: 0.1
+            capability_needed: 0
+            fake_kill_entity: false
+          ranch_butchering_knife:
+            tool: "butchering knife"
+            spotlight: "minecraft:cow"
+            icon: "minecraft:leather"
+            action_string: <&6>Butchering Cow
+            action_time: 2
+            animation_task: noop
+            material_given: ranching_leather
+            quantity_given: 1
+            capability_gained: 0.1
+            capability_needed: 0
+            fake_kill_entity: true
+        pig:
+          air:
+            tool: "air"
+            spotlight: "minecraft:pig"
+            icon: "minecraft:brown_mushroom"
+            action_string: <&6>?!?!?!??!?
+            action_time: 2
+            animation_task: noop
+            material_given: ranching_brown_mushroom
+            quantity_given: 1
+            capability_gained: 0.1
+            capability_needed: 0
+            fake_kill_entity: false
+          ranch_butchering_knife:
+            tool: "butchering knife"
+            spotlight: "minecraft:pig"
+            icon: "minecraft:porkchop"
+            action_string: <&6>Butchering Pig
+            action_time: 2
+            animation_task: noop
+            material_given: ranching_porkchop
+            quantity_given: 1
+            capability_gained: 0.1
+            capability_needed: 0
+            fake_kill_entity: true
+        chicken:
+          air:
+            tool: "air"
+            spotlight: "minecraft:chicken"
+            icon: "minecraft:egg"
+            action_string: <&6>Gathering Egg
+            action_time: 2
+            animation_task: noop
+            material_given: ranching_egg
+            quantity_given: 1
+            capability_gained: 0.1
+            capability_needed: 0
+            fake_kill_entity: false
+          ranch_butchering_knife:
+            tool: "butchering knife"
+            spotlight: "minecraft:chicken"
+            icon: "minecraft:chicken"
+            action_string: <&6>Butchering Chicken
+            action_time: 2
+            animation_task: noop
+            material_given: ranching_chicken
+            quantity_given: 1
+            capability_gained: 0.1
+            capability_needed: 0
+            fake_kill_entity: true
+        sheep:
+          shears:
+            tool: "shears"
+            spotlight: "minecraft:sheep"
+            icon: "minecraft:white_wool"
+            action_string: <&6>Shearing Sheep
+            action_time: 2
+            animation_task: noop
+            material_given: ranching_white_wool
+            quantity_given: 1
+            capability_gained: 0.1
+            capability_needed: 0
+            fake_kill_entity: false
+          ranch_butchering_knife:
+            tool: "butchering knife"
+            spotlight: "minecraft:sheep"
+            icon: "farmersdelight:mutton_chops"
+            action_string: <&6>Butchering Sheep
+            action_time: 2
+            animation_task: noop
+            material_given: farmersdelight_mutton_chops
+            quantity_given: 1
+            capability_gained: 0.1
+            capability_needed: 0
+            fake_kill_entity: true
+    smelting:
+      type: inhand_production
+      capability: blacksmith
+      category: "smelting"
+      icon: "minecraft:anvil"
+      action_string: <&6>Smelting Metal
+      action_time: 5s
+      animation_task: noop
+      cancel_task: profession_refund_production
+      crafting_menu: false
+      crafts:
+        mining_create_copper_nugget:
+          spotlight: "create:copper_nugget"
+          icon: "minecraft:copper_ingot"
+          capability_needed: 100
+          material_cost: 18
+          material_given: blacksmith_copper_ingot
+        mining_iron_nugget:
+          spotlight: "minecraft:iron_nugget"
+          icon: "minecraft:iron_ingot"
+          capability_needed: 200
+          material_cost: 18
+          material_given: blacksmith_iron_ingot
+        mining_gold_nugget:
+          spotlight: "minecraft:gold_nugget"
+          icon: "minecraft:gold_ingot"
+          capability_needed: 300
+          material_cost: 18
+          material_given: blacksmith_gold_ingot
+        mining_diamond_nugget:
+          spotlight: "aquaculture:neptunium_nugget"
+          icon: "minecraft:diamond"
+          capability_needed: 400
+          material_cost: 18
+          material_given: blacksmith_steel_nugget
+    blacksmith:
+      type: place_production
+      capability: blacksmith
+      category: "smithing"
+      icon: "magistuarmory:blacksmith_hammer"
+      tool: magistuarmory_blacksmith_hammer
+      action_string: <&6>Smithing Item
+      action_time: 10s
+      animation_task: blacksmithing_animation
+      cancel_task: profession_refund_production
+      crafting_menu: true
+      materials:
+        stone:
+          need_shift: true
+          shift: <[passthrough].center.below[0.62].forward[0.25]>
+          capability_needed: 1
+          items:
+            blacksmith_magistuarmory_stone_stylet:
+              material_cost:
+                mining_stone: 3
+                woodwork_wooden_tool_handle: 2
+              capability_needed: 0
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward_flat.left[0.2]>
+            blacksmith_magistuarmory_stone_shortsword:
+              material_cost:
+                mining_stone: 6
+                woodwork_wooden_tool_handle: 2
+              capability_needed: 5
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_stone_katzbalger:
+              material_cost:
+                mining_stone: 10
+                woodwork_wooden_tool_handle: 2
+              capability_needed: 10
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_epicfight_stone_spear:
+              material_cost:
+                mining_stone: 10
+                woodwork_wooden_tool_handle: 2
+              capability_needed: 20
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_stone_ahlspiess:
+              material_cost:
+                mining_stone: 15
+                woodwork_wooden_tool_handle: 2
+              capability_needed: 25
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_stone_estoc:
+              material_cost:
+                mining_stone: 15
+                woodwork_wooden_tool_handle: 2
+              capability_needed: 30
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_stone_bastardsword:
+              material_cost:
+                mining_stone: 15
+                woodwork_wooden_tool_handle: 2
+              capability_needed: 35
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_stone_claymore:
+              material_cost:
+                mining_stone: 15
+                woodwork_wooden_tool_handle: 2
+              capability_needed: 40
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_stone_zweihander:
+              material_cost:
+                mining_stone: 15
+                woodwork_wooden_tool_handle: 2
+              capability_needed: 45
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_stone_lochaberaxe:
+              material_cost:
+                mining_stone: 15
+                woodwork_wooden_tool_handle: 2
+              capability_needed: 55
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_stone_concavehalberd:
+              material_cost:
+                mining_stone: 15
+                woodwork_wooden_tool_handle: 2
+              capability_needed: 60
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_stone_heavymace:
+              material_cost:
+                mining_stone: 15
+                woodwork_wooden_tool_handle: 2
+              capability_needed: 65
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_stone_heavywarhammer:
+              material_cost:
+                mining_stone: 15
+                woodwork_wooden_tool_handle: 2
+              capability_needed: 70
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_stone_nails:
+              material_cost:
+                mining_stone: 6
+              capability_needed: 74
+              rep_gained: 0.1
+              need_shift: false
+              shift: none
+            blacksmith_magistuarmory_stone_lucernhammer:
+              material_cost:
+                mining_stone: 15
+                woodwork_wooden_tool_handle: 2
+              capability_needed: 75
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_stone_morgenstern:
+              material_cost:
+                mining_stone: 15
+                woodwork_wooden_tool_handle: 2
+              capability_needed: 80
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_stone_guisarme:
+              material_cost:
+                mining_stone: 15
+                woodwork_wooden_tool_handle: 2
+              capability_needed: 85
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_stone_heatershield:
+              material_cost:
+                mining_stone: 15
+                woodwork_wooden_tool_handle: 2
+              capability_needed: 95
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_stone_target:
+              material_cost:
+                mining_stone: 15
+                woodwork_wooden_tool_handle: 2
+              capability_needed: 100
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_stone_buckler:
+              material_cost:
+                mining_stone: 15
+                woodwork_wooden_tool_handle: 2
+              capability_needed: 105
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_stone_rondache:
+              material_cost:
+                mining_stone: 15
+                woodwork_wooden_tool_handle: 2
+              capability_needed: 110
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_stone_tartsche:
+              material_cost:
+                mining_stone: 15
+                woodwork_wooden_tool_handle: 2
+              capability_needed: 115
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_stone_ellipticalshield:
+              material_cost:
+                mining_stone: 15
+                woodwork_wooden_tool_handle: 2
+              capability_needed: 120
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_stone_roundshield:
+              material_cost:
+                mining_stone: 15
+                woodwork_wooden_tool_handle: 2
+              capability_needed: 125
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_stone_pavese:
+              material_cost:
+                mining_stone: 15
+                woodwork_wooden_tool_handle: 2
+              capability_needed: 130
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_stone_kiteshield:
+              material_cost:
+                mining_stone: 15
+                woodwork_wooden_tool_handle: 2
+              capability_needed: 135
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+        copper_ingot:
+          need_shift: false
+          capability_needed: 100
+          items:
+            blacksmith_magistuarmory_copper_stylet:
+              material_cost:
+                mining_copper_ingot: 3
+                woodwork_birch_tool_handle: 2
+              capability_needed: 0
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_copper_shortsword:
+              material_cost:
+                mining_copper_ingot: 6
+                woodwork_birch_tool_handle: 2
+              capability_needed: 5
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_copper_katzbalger:
+              material_cost:
+                mining_copper_ingot: 10
+                woodwork_birch_tool_handle: 2
+              capability_needed: 10
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_copper_pike:
+              material_cost:
+                mining_copper_ingot: 10
+                woodwork_birch_tool_handle: 2
+              capability_needed: 20
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_copper_ahlspiess:
+              material_cost:
+                mining_copper_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 25
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_copper_estoc:
+              material_cost:
+                mining_copper_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 30
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_copper_bastardsword:
+              material_cost:
+                mining_copper_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 35
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_copper_claymore:
+              material_cost:
+                mining_copper_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 40
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_copper_zweihander:
+              material_cost:
+                mining_copper_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 45
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_copper_lochaberaxe:
+              material_cost:
+                mining_copper_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 55
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_copper_concavehalberd:
+              material_cost:
+                mining_copper_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 60
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_copper_heavymace:
+              material_cost:
+                mining_copper_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 65
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_copper_heavywarhammer:
+              material_cost:
+                mining_copper_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 70
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_copper_lucernhammer:
+              material_cost:
+                mining_copper_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 75
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_copper_morgenstern:
+              material_cost:
+                mining_copper_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 80
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_copper_guisarme:
+              material_cost:
+                mining_copper_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 85
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_copper_heatershield:
+              material_cost:
+                mining_copper_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 95
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_copper_target:
+              material_cost:
+                mining_copper_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 100
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_copper_buckler:
+              material_cost:
+                mining_copper_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 105
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_copper_rondache:
+              material_cost:
+                mining_copper_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 110
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_copper_tartsche:
+              material_cost:
+                mining_copper_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 115
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_copper_ellipticalshield:
+              material_cost:
+                mining_copper_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 120
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_copper_roundshield:
+              material_cost:
+                mining_copper_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 125
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_copper_pavese:
+              material_cost:
+                mining_copper_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 130
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_copper_kiteshield:
+              material_cost:
+                mining_copper_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 135
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+        iron_ingot:
+          need_shift: false
+          capability_needed: 200
+          items:
+            blacksmith_magistuarmory_iron_stylet:
+              material_cost:
+                blacksmith_iron_ingot: 3
+                woodwork_birch_tool_handle: 2
+              capability_needed: 0
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_iron_shortsword:
+              material_cost:
+                blacksmith_iron_ingot: 6
+                woodwork_birch_tool_handle: 2
+              capability_needed: 5
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_iron_katzbalger:
+              material_cost:
+                blacksmith_iron_ingot: 10
+                woodwork_birch_tool_handle: 2
+              capability_needed: 10
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_iron_pike:
+              material_cost:
+                blacksmith_iron_ingot: 10
+                woodwork_birch_tool_handle: 2
+              capability_needed: 20
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_iron_ahlspiess:
+              material_cost:
+                blacksmith_iron_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 25
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_iron_estoc:
+              material_cost:
+                blacksmith_iron_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 30
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_iron_bastardsword:
+              material_cost:
+                blacksmith_iron_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 35
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_iron_claymore:
+              material_cost:
+                blacksmith_iron_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 40
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_iron_zweihander:
+              material_cost:
+                blacksmith_iron_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 45
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_iron_lochaberaxe:
+              material_cost:
+                blacksmith_iron_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 55
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_iron_concavehalberd:
+              material_cost:
+                blacksmith_iron_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 60
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_iron_heavymace:
+              material_cost:
+                blacksmith_iron_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 65
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_iron_heavywarhammer:
+              material_cost:
+                blacksmith_iron_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 70
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_iron_lucernhammer:
+              material_cost:
+                blacksmith_iron_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 75
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_iron_morgenstern:
+              material_cost:
+                blacksmith_iron_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 80
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_iron_guisarme:
+              material_cost:
+                blacksmith_iron_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 85
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_iron_heatershield:
+              material_cost:
+                blacksmith_iron_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 95
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_iron_target:
+              material_cost:
+                blacksmith_iron_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 100
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_iron_buckler:
+              material_cost:
+                blacksmith_iron_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 105
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_iron_rondache:
+              material_cost:
+                blacksmith_iron_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 110
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_iron_tartsche:
+              material_cost:
+                blacksmith_iron_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 115
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_iron_ellipticalshield:
+              material_cost:
+                blacksmith_iron_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 120
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_iron_roundshield:
+              material_cost:
+                blacksmith_iron_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 125
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_iron_pavese:
+              material_cost:
+                blacksmith_iron_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 130
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+            blacksmith_magistuarmory_iron_kiteshield:
+              material_cost:
+                blacksmith_iron_ingot: 15
+                woodwork_birch_tool_handle: 2
+              capability_needed: 135
+              rep_gained: 0.1
+              need_shift: true
+              shift: <[passthrough].above[0.1].forward[0.4].right[0.2]>
+    sewing:
+      type: inhand_production
+      capability: tailoring
+      category: "sewing"
+      tool: tailoring_sewing_needle
+      action_string: <&6>Sewing
+      action_time: 8s
+      animation_task: noop
+      cancel_task: profession_refund_production
+      crafting_menu: true
+      materials:
+        tailoring_sewing_needle:
+          items:
+            sewingkit_leather_strip:
+              material_cost:
+                leather: 5
+              capability_needed: 0
+              rep_gained: 0.1
+            sewingkit_leather_sheet:
+              material_cost:
+                leather: 10
+              capability_needed: 1
+              rep_gained: 0.1
+            magistuarmory_woolen_fabric:
+              material_cost:
+                white_wool: 5
+              capability_needed: 2
+              rep_gained: 0.1
+            sewingkit_wool_shoes:
+              material_cost:
+                oak_planks: 5
+              capability_needed: 5
+              rep_gained: 0.1
+            sewingkit_wool_pants:
+              material_cost:
+                oak_planks: 5
+              capability_needed: 10
+              rep_gained: 0.1
+            sewingkit_wool_shirt:
+              material_cost:
+                oak_planks: 5
+              capability_needed: 15
+              rep_gained: 0.1
+            sewingkit_wool_hat:
+              material_cost:
+                oak_planks: 5
+              capability_needed: 20
+              rep_gained: 0.1
+            tailor_padding:
+              material_cost:
+                white_wool: 5
+              capability_needed: 24
+              rep_gained: 0.1
+            leather_boots:
+              material_cost:
+                oak_planks: 5
+              capability_needed: 25
+              rep_gained: 0.1
+            leather_leggings:
+              material_cost:
+                oak_planks: 5
+              capability_needed: 30
+              rep_gained: 0.1
+            leather_chestplate:
+              material_cost:
+                oak_planks: 5
+              capability_needed: 35
+              rep_gained: 0.1
+            leather_helmet:
+              material_cost:
+                oak_planks: 5
+              capability_needed: 40
+              rep_gained: 0.1
+            comforts_sleeping_bag_white:
+              material_cost:
+                oak_planks: 5
+              capability_needed: 45
+              rep_gained: 0.1
+            comforts_sleeping_bag_orange:
+              material_cost:
+                oak_planks: 5
+              capability_needed: 50
+              rep_gained: 0.1
+            comforts_sleeping_bag_magenta:
+              material_cost:
+                oak_planks: 5
+              capability_needed: 55
+              rep_gained: 0.1
+            comforts_sleeping_bag_light_blue:
+              material_cost:
+                oak_planks: 5
+              capability_needed: 60
+              rep_gained: 0.1
+            comforts_sleeping_bag_yellow:
+              material_cost:
+                oak_planks: 5
+              capability_needed: 65
+              rep_gained: 0.1
+            comforts_sleeping_bag_lime:
+              material_cost:
+                oak_planks: 5
+              capability_needed: 70
+              rep_gained: 0.1
+            comforts_sleeping_bag_pink:
+              material_cost:
+                oak_planks: 5
+              capability_needed: 75
+              rep_gained: 0.1
+            comforts_sleeping_bag_gray:
+              material_cost:
+                oak_planks: 5
+              capability_needed: 80
+              rep_gained: 0.1
+            comforts_sleeping_bag_light_gray:
+              material_cost:
+                oak_planks: 5
+              capability_needed: 85
+              rep_gained: 0.1
+            comforts_sleeping_bag_cyan:
+              material_cost:
+                oak_planks: 5
+              capability_needed: 90
+              rep_gained: 0.1
+            comforts_sleeping_bag_purple:
+              material_cost:
+                oak_planks: 5
+              capability_needed: 95
+              rep_gained: 0.1
+            comforts_sleeping_bag_blue:
+              material_cost:
+                oak_planks: 5
+              capability_needed: 100
+              rep_gained: 0.1
+            comforts_sleeping_bag_brown:
+              material_cost:
+                oak_planks: 5
+              capability_needed: 105
+              rep_gained: 0.1
+            comforts_sleeping_bag_green:
+              material_cost:
+                oak_planks: 5
+              capability_needed: 110
+              rep_gained: 0.1
+            comforts_sleeping_bag_red:
+              material_cost:
+                oak_planks: 5
+              capability_needed: 115
+              rep_gained: 0.1
+            comforts_sleeping_bag_black:
+              material_cost:
+                oak_planks: 5
+              capability_needed: 120
+              rep_gained: 0.1
+            days_in_the_middle_ages_leather_coinpouch:
+              material_cost:
+                oak_planks: 5
+              capability_needed: 125
+              rep_gained: 0.1
+            sophisticatedbackpacks_backpack:
+              material_cost:
+                oak_planks: 5
+              capability_needed: 130
+              rep_gained: 0.1
+    woodwork:
+      type: inhand_production
+      capability: woodwork
+      category: "woodworking"
+      tool: none
+      action_string: <&6>Working Wood
+      action_time: 6s
+      animation_task: noop
+      cancel_task: profession_refund_production
+      crafting_menu: true
+      materials:
+        lumberjack_oak_planks:
+          items:
+            oak_slab:
+              material_cost:
+                lumberjack_oak_planks: 3
+              capability_needed: 0
+              rep_gained: 0.1
+              needs_downshift: false
+            oak_stairs:
+              material_cost:
+                lumberjack_oak_planks: 6
+              capability_needed: 5
+              rep_gained: 0.1
+              needs_downshift: false
+            stripped_oak_log:
+              material_cost:
+                lumberjack_oak_planks: 5
+              capability_needed: 10
+              rep_gained: 0.1
+              needs_downshift: false
+            oak_trapdoor:
+              material_cost:
+                lumberjack_oak_planks: 15
+              capability_needed: 15
+              rep_gained: 0.1
+              needs_downshift: false
+            oak_fence:
+              material_cost:
+                lumberjack_oak_planks: 5
+              capability_needed: 20
+              rep_gained: 0.1
+              needs_downshift: false
+            oak_fence_gate:
+              material_cost:
+                lumberjack_oak_planks: 6
+              capability_needed: 25
+              rep_gained: 0.1
+              needs_downshift: false
+            oak_door:
+              material_cost:
+                lumberjack_oak_planks: 6
+              capability_needed: 30
+              rep_gained: 0.1
+              needs_downshift: false
+            woodwork_wooden_tool_handle:
+              material_cost:
+                lumberjack_oak_planks: 5
+              capability_needed: 35
+              rep_gained: 0.1
+              needs_downshift: false
+            oak_pressure_plate:
+              material_cost:
+                lumberjack_oak_planks: 3
+              capability_needed: 40
+              rep_gained: 0.1
+              needs_downshift: false
+            oak_button:
+              material_cost:
+                lumberjack_oak_planks: 2
+              capability_needed: 45
+              rep_gained: 0.1
+              needs_downshift: false
+            oak_sign:
+              material_cost:
+                lumberjack_oak_planks: 4
+              capability_needed: 50
+              rep_gained: 0.1
+              needs_downshift: false
+            oak_hanging_sign:
+              material_cost:
+                lumberjack_oak_planks: 5
+              capability_needed: 55
+              rep_gained: 0.1
+              needs_downshift: false
+            farmersdelight_oak_cabinet:
+              material_cost:
+                lumberjack_oak_planks: 8
+              capability_needed: 60
+              rep_gained: 0.1
+              needs_downshift: false
+            create_oak_window:
+              material_cost:
+                lumberjack_oak_planks: 8
+              capability_needed: 65
+              rep_gained: 0.1
+              needs_downshift: false
+            aquaculture_oak_fish_mount:
+              material_cost:
+                lumberjack_oak_planks: 6
+              capability_needed: 70
+              rep_gained: 0.1
+              needs_downshift: false
+            fantasyfurniture_nordictable_small:
+              material_cost:
+                lumberjack_oak_planks: 12
+                blacksmith_stone_nails: 4
+              capability_needed: 75
+              rep_gained: 0.1
+              needs_downshift: false
+            fantasyfurniture_nordictable_wide:
+              material_cost:
+                lumberjack_oak_planks: 16
+                blacksmith_stone_nails: 4
+              capability_needed: 76
+              rep_gained: 0.1
+              needs_downshift: false
+            fantasyfurniture_nordictable_large:
+              material_cost:
+                lumberjack_oak_planks: 24
+                blacksmith_stone_nails: 8
+              capability_needed: 77
+              rep_gained: 0.1
+              needs_downshift: false
+            fantasyfurniture_nordicstool:
+              material_cost:
+                lumberjack_oak_planks: 6
+                blacksmith_stone_nails: 4
+              capability_needed: 80
+              rep_gained: 0.1
+              needs_downshift: false
+            fantasyfurniture_nordicdrawer:
+              material_cost:
+                lumberjack_oak_planks: 8
+                blacksmith_stone_nails: 12
+              capability_needed: 81
+              rep_gained: 0.1
+              needs_downshift: false
+            fantasyfurniture_nordicshelf:
+              material_cost:
+                lumberjack_oak_planks: 8
+                blacksmith_stone_nails: 4
+              capability_needed: 82
+              rep_gained: 0.1
+              needs_downshift: false
+            fantasyfurniture_nordicsofa:
+              material_cost:
+                lumberjack_oak_planks: 8
+                blacksmith_stone_nails: 4
+                tailor_padding: 12
+              capability_needed: 85
+              rep_gained: 0.1
+              needs_downshift: false
+            fantasyfurniture_nordicchair:
+              material_cost:
+                lumberjack_oak_planks: 8
+                blacksmith_stone_nails: 4
+                tailor_padding: 2
+              capability_needed: 86
+              rep_gained: 0.1
+              needs_downshift: false
+            fantasyfurniture_nordicbench:
+              material_cost:
+                lumberjack_oak_planks: 12
+                blacksmith_stone_nails: 6
+                tailor_padding: 4
+              capability_needed: 87
+              rep_gained: 0.1
+              needs_downshift: false
+            fantasyfurniture_nordicbookshelf:
+              material_cost:
+                lumberjack_oak_planks: 12
+                blacksmith_stone_nails: 6
+              capability_needed: 88
+              rep_gained: 0.1
+              needs_downshift: false
+            fantasyfurniture_nordicchest:
+              material_cost:
+                lumberjack_oak_planks: 24
+                blacksmith_stone_nails: 12
+              capability_needed: 90
+              rep_gained: 0.1
+              needs_downshift: false
+            fantasyfurniture_nordicdresser:
+              material_cost:
+                lumberjack_oak_planks: 24
+                blacksmith_stone_nails: 12
+              capability_needed: 91
+              rep_gained: 0.1
+              needs_downshift: false
+            fantasyfurniture_nordicbed_single:
+              material_cost:
+                lumberjack_oak_planks: 12
+                blacksmith_stone_nails: 12
+                tailor_padding: 4
+              capability_needed: 92
+              rep_gained: 0.1
+              needs_downshift: false
+            fantasyfurniture_nordicbed_double:
+              material_cost:
+                lumberjack_oak_planks: 12
+                blacksmith_stone_nails: 12
+                tailor_padding: 8
+              capability_needed: 93
+              rep_gained: 0.1
+              needs_downshift: false
+            fantasyfurniture_nordicchandelier:
+              material_cost:
+                lumberjack_oak_planks: 6
+                blacksmith_stone_nails: 12
+              capability_needed: 94
+              rep_gained: 0.1
+              needs_downshift: false
+            fantasyfurniture_nordicdoor_single:
+              material_cost:
+                lumberjack_oak_planks: 6
+                blacksmith_stone_nails: 6
+              capability_needed: 95
+              rep_gained: 0.1
+              needs_downshift: false
+            fantasyfurniture_nordicdoor_double:
+              material_cost:
+                lumberjack_oak_planks: 12
+                blacksmith_stone_nails: 12
+              capability_needed: 96
+              rep_gained: 0.1
+              needs_downshift: false
+            fantasyfurniture_nordiclockbox:
+              material_cost:
+                lumberjack_oak_planks: 6
+                blacksmith_stone_nails: 8
+              capability_needed: 97
+              rep_gained: 0.1
+              needs_downshift: false
+            fantasyfurniture_nordiccounter:
+              material_cost:
+                lumberjack_oak_planks: 12
+                blacksmith_stone_nails: 8
+              capability_needed: 98
+              rep_gained: 0.1
+              needs_downshift: false
+            fantasyfurniture_nordicoven:
+              material_cost:
+                lumberjack_oak_planks: 16
+                blacksmith_stone_nails: 12
+              capability_needed: 99
+              rep_gained: 0.1
+              needs_downshift: false
+    fletching:
+      type: inhand_production
+      capability: fletching
+      category: "fletching"
+      tool: oak_planks
+      action_string: <&6>Fletching
+      action_time: 6s
+      animation_task: noop
+      cancel_task: profession_refund_production
+      crafting_menu: true
+      materials:
+        oak_planks:
+          items:
+            wooden_hoe:
+              material_cost:
+                lumberjack_oak_planks: 5
+              capability_needed: 0
+              rep_gained: 0.1
+              needs_downshift: false
+    fishing:
+      type: fishing
+      capability: fishing
+      category: "fishing"
+      capability_for_hook:
+        iron_hook: 1
+        gold_hook: 100
+        diamond_hook: 200
+        light_hook: 300
+        heavy_hook: 400
+        redstone_hook: 500
+      loot_table:
+        iron_hook:
+          spotlight: "aquaculture:iron_hook"
+          fishing_cod: 30
+        gold_hook:
+          spotlight: "aquaculture:gold_hook"
+          fishing_salmon: 30
+        diamond_hook:
+          spotlight: "aquaculture:diamond_hook"
+          fishing_ink_sac: 30
+        light_hook:
+          spotlight: "aquaculture:light_hook"
+          fishing_bone: 30
+        heavy_hook:
+          spotlight: "aquaculture:heavy_hook"
+          fishing_kelp: 30
+        redstone_hook:
+          spotlight: "aquaculture:redstone_hook"
+          fishing_cod: 20
+          fishing_salmon: 20
+          fishing_ink_sac: 20
+          fishing_bone: 20
+          fishing_kelp: 20
+    endurance:
+      category: "endurance"
+      no_parse: true
+      color: <&color[#FF0000]>
+      entrance_fee: COIN_GOLD
+      entrance_fee_quantity: 1
+      check_on_knowledge_gain: true
+      checks:
+        endurance_gain_1: 25
+        endurance_gain_2: 50
+        endurance_gain_3: 75
+        endurance_gain_4: 100
+        endurance_gain_5: 125
+        endurance_gain_6: 150
+        endurance_gain_7: 175
+        endurance_gain_8: 200
+        endurance_gain_9: 225
+        endurance_gain_10: 250
+        endurance_gain_11: 275
+        endurance_gain_12: 300
+        endurance_gain_13: 325
+        endurance_gain_14: 350
+        endurance_gain_15: 375
+        endurance_gain_16: 300
+        endurance_gain_17: 425
+        endurance_gain_18: 450
+        endurance_gain_19: 475
+        endurance_gain_20: 500
+    spell_creation:
+      category: "spell_creation"
+      no_parse: true
+      color: <&color[#FF33FF]>
+      entrance_fee: COIN_GOLD
+      entrance_fee_quantity: 1
+      check_on_knowledge_gain: false
+      checks:
+        underfoot: 1
+        toss: 20
+        bounce: 40
+        ignite: 60
+        amplify: 80
+        freeze: 100
+        gust: 120
+        light: 140
+        rune: 160
+        pickup: 180
+        summon_steed: 200
+    parkour:
+      category: "parkour"
+      no_parse: true
+      color: <&color[#00FFFF]>
+      entrance_fee: COIN_GOLD
+      entrance_fee_quantity: 1
+      check_on_knowledge_gain: true
+      checks:
+        parkour_learn_FastRun: 1
+        parkour_learn_Dodge: 50
+        parkour_learn_Breakfall: 100
+        parkour_learn_Slide: 150
+        parkour_learn_CatLeap: 200
+    mercantile:
+      category: "mercantile"
+      no_parse: true
+      color: <&color[#FFBB00]>
+      entrance_fee: COIN_GOLD
+      entrance_fee_quantity: 1
+      check_on_knowledge_gain: false
+      checks:
+        supply_cart: 1
+        tier0_sales: 2
+        tier1_sales: 100
+        tier2_sales: 200
+        tier3_sales: 300
+        tier4_sales: 400

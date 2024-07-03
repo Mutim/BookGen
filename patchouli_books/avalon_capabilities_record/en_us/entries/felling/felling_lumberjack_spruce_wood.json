@@ -1,0 +1,22 @@
+{
+  "parent": "patchouli:felling",
+  "name": "(200) Spruce Wood",
+  "icon": "minecraft:spruce_wood",
+  "category": "patchouli:felling",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Spruce Wood!",
+      "item": "minecraft:spruce_wood{display:{Name:'{\\\"text\\\": \\\"Spruce Wood\\\", \\\"color\\\": \\\"#FFA500\\\"}'}}",
+      "text": "Gathering $(#FFA500)Spruce Wood $()is simple! This is the 3rd capability that you will unlock! $(br2)Item Given: Spruce Wood"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:item{Item:{id:\"minecraft:spruce_wood\",Count:1b}}",
+      "scale": 1,
+      "offset": 0,
+      "name": "Capability Level 200",
+      "text": "At $(#FFA500)level 200$(), you will be able to immediately gather $(#FFA500)Spruce Wood$()"
+    }
+  ]
+}

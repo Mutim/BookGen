@@ -1,0 +1,22 @@
+{
+  "parent": "patchouli:farming",
+  "name": "(250) Apple",
+  "icon": "minecraft:apple",
+  "category": "patchouli:farming",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Apple!",
+      "item": "minecraft:apple{display:{Name:'{\\\"text\\\": \\\"Apple\\\", \\\"color\\\": \\\"#FFA500\\\"}'}}",
+      "text": "Gathering $(#FFA500)Apple $()is simple! This is the 6th capability that you will unlock! $(br2)Item Given: Apple"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:item{Item:{id:\"minecraft:apple\",Count:1b}}",
+      "scale": 1,
+      "offset": 0,
+      "name": "Capability Level 250",
+      "text": "At $(#FFA500)level 250$(), you will be able to immediately gather $(#FFA500)Apple$()"
+    }
+  ]
+}

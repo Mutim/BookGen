@@ -1,0 +1,22 @@
+{
+  "parent": "patchouli:ranching",
+  "name": "(0) Leather",
+  "icon": "minecraft:leather",
+  "category": "patchouli:ranching",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Leather!",
+      "item": "minecraft:leather{display:{Name:'{\\\"text\\\": \\\"Leather\\\", \\\"color\\\": \\\"#FFA500\\\"}'}}",
+      "text": "Ranching for $(#FFA500)Leather $()is simple! This is the 1st capability that you will unlock! $(br2)Animal Ranched: Cow$(br)Item Given: Leather$(br)Tool Required: Butchering Knife"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:cow",
+      "scale": 0.5,
+      "offset": 0,
+      "name": "Capability Level 0",
+      "text": "At $(#FFA500)level 0$(), you will be able to immediately gather $(#FFA500)Leather$()"
+    }
+  ]
+}

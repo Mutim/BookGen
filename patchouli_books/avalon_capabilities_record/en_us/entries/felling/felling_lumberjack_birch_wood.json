@@ -1,0 +1,22 @@
+{
+  "parent": "patchouli:felling",
+  "name": "(100) Birch Wood",
+  "icon": "minecraft:birch_wood",
+  "category": "patchouli:felling",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Birch Wood!",
+      "item": "minecraft:birch_wood{display:{Name:'{\\\"text\\\": \\\"Birch Wood\\\", \\\"color\\\": \\\"#FFA500\\\"}'}}",
+      "text": "Gathering $(#FFA500)Birch Wood $()is simple! This is the 2nd capability that you will unlock! $(br2)Item Given: Birch Wood"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:item{Item:{id:\"minecraft:birch_wood\",Count:1b}}",
+      "scale": 1,
+      "offset": 0,
+      "name": "Capability Level 100",
+      "text": "At $(#FFA500)level 100$(), you will be able to immediately gather $(#FFA500)Birch Wood$()"
+    }
+  ]
+}

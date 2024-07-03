@@ -1,0 +1,22 @@
+{
+  "parent": "patchouli:ranching",
+  "name": "(0) Porkchop",
+  "icon": "minecraft:porkchop",
+  "category": "patchouli:ranching",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Porkchop!",
+      "item": "minecraft:porkchop{display:{Name:'{\\\"text\\\": \\\"Porkchop\\\", \\\"color\\\": \\\"#FFA500\\\"}'}}",
+      "text": "Ranching for $(#FFA500)Porkchop $()is simple! This is the 2nd capability that you will unlock! $(br2)Animal Ranched: Pig$(br)Item Given: Porkchop$(br)Tool Required: Butchering Knife"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:pig",
+      "scale": 0.5,
+      "offset": 0,
+      "name": "Capability Level 0",
+      "text": "At $(#FFA500)level 0$(), you will be able to immediately gather $(#FFA500)Porkchop$()"
+    }
+  ]
+}

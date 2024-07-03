@@ -1,0 +1,22 @@
+{
+  "parent": "patchouli:mining",
+  "name": "(300) Gold Nugget",
+  "icon": "minecraft:gold_nugget",
+  "category": "patchouli:mining",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Gold Nugget!",
+      "item": "minecraft:gold_nugget{display:{Name:'{\\\"text\\\": \\\"Gold Nugget\\\", \\\"color\\\": \\\"#FFA500\\\"}'}}",
+      "text": "Gathering $(#FFA500)Gold Nugget $()is simple! This is the 4th capability that you will unlock! $(br2)Item Given: Gold Nugget"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:item{Item:{id:\"minecraft:gold_ore\",Count:1b}}",
+      "scale": 1,
+      "offset": 0,
+      "name": "Capability Level 300",
+      "text": "At $(#FFA500)level 300$(), you will be able to immediately gather $(#FFA500)Gold Nugget$()"
+    }
+  ]
+}
